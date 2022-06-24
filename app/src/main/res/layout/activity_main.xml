@@ -81,7 +81,8 @@
             <Button
                 android:id="@+id/buttonDivide"
                 android:backgroundTint="#F66B0E"
-                android:text="/" />
+                android:text="/"
+                android:onClick="Divide"/>
 
             <Button
                 android:id="@+id/buttonFour"
@@ -104,7 +105,8 @@
             <Button
                 android:id="@+id/buttonMultiply"
                 android:backgroundTint="#F66B0E"
-                android:text="*" />
+                android:text="*"
+                android:onClick="Multiply"/>
 
             <Button
                 android:id="@+id/buttonOne"
@@ -127,7 +129,8 @@
             <Button
                 android:id="@+id/buttonMinus"
                 android:backgroundTint="#F66B0E"
-                android:text="-" />
+                android:text="-"
+                android:onClick="Minus"/>
 
             <Button
                 android:id="@+id/buttonDot"
@@ -143,12 +146,14 @@
             <Button
                 android:id="@+id/buttonEquals"
                 android:backgroundTint="#F66B0E"
-                android:text="=" />
+                android:text="="
+                android:onClick="Equals"/>
 
             <Button
                 android:id="@+id/buttonPlus"
                 android:backgroundTint="#F66B0E"
-                android:text="+"/>
+                android:text="+"
+                android:onClick="Plus"/>
 
         </GridLayout>
 

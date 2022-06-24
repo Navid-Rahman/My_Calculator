@@ -12,6 +12,8 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     TextView result;
+    double operand1, operand2, answer;
+    char c;
 
 
     @Override
@@ -79,5 +81,62 @@ public class MainActivity extends AppCompatActivity {
         result.setText(s+"9");
     }
 
+    public void Plus(View view){
+
+        String s = result.getText().toString();
+        operand1 = Double.parseDouble(s);
+        result.setText("");
+        c = '+';
+    }
+    public void Minus(View view){
+
+        String s = result.getText().toString();
+        operand1 = Double.parseDouble(s);
+        result.setText("");
+        c = '-';
+    }
+    public void Multiply(View view){
+
+        String s = result.getText().toString();
+        operand1 = Double.parseDouble(s);
+        result.setText("");
+        c = '*';
+    }
+    public void Divide(View view){
+
+        String s = result.getText().toString();
+        operand1 = Double.parseDouble(s);
+        result.setText("");
+        c = '/';
+    }
+    public void Equals(View view){
+
+        String s = result.getText().toString();
+        operand2 = Double.parseDouble(s);
+        if (c=='+'){
+            answer = operand1 + operand2;
+            s = String.valueOf(answer);
+            result.setText(s);
+            c = '0';
+        }
+        if (c=='-'){
+            answer = operand1 - operand2;
+            s = String.valueOf(answer);
+            result.setText(s);
+            c = '0';
+        }
+        if (c=='*'){
+            answer = operand1 * operand2;
+            s = String.valueOf(answer);
+            result.setText(s);
+            c = '0';
+        }
+        if (c=='/'){
+            answer = operand1 / operand2;
+            s = String.valueOf(answer);
+            result.setText(s);
+            c = '0';
+        }
+    }
 
 }
