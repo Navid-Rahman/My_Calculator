@@ -5,8 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -25,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
+//    Clear and Delete Button
     public void Clear(View view){
         result.setText("");
     }
@@ -38,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+
+//    Number Buttons Functions
     public void numZero(View view){
         String s = result.getText().toString();
         if(s.length() !=0){
@@ -81,6 +83,8 @@ public class MainActivity extends AppCompatActivity {
         result.setText(s+"9");
     }
 
+
+//    Calcutor Method Funtions
     public void Plus(View view){
 
         String s = result.getText().toString();
@@ -108,6 +112,10 @@ public class MainActivity extends AppCompatActivity {
         operand1 = Double.parseDouble(s);
         result.setText("");
         c = '/';
+    }
+    public void Dot(View view){
+        String s = result.getText().toString();
+        result.setText(s+".");
     }
     public void Equals(View view){
 

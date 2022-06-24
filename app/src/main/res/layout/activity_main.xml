@@ -58,7 +58,8 @@
             android:columnCount="4"
             android:rowCount="4"
             android:useDefaultMargins="true"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_gravity="bottom|center">
 
             <Button
                 android:id="@+id/buttonSeven"
@@ -135,7 +136,8 @@
             <Button
                 android:id="@+id/buttonDot"
                 android:backgroundTint="#7F8487"
-                android:text="." />
+                android:text="."
+                android:onClick="Dot"/>
 
             <Button
                 android:id="@+id/buttonZero"
