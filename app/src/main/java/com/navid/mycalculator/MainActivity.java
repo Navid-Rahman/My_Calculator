@@ -23,6 +23,16 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void Clear(View view){
+        result.setText("");
+    }
+
+    public void delete(View view){
+        String s = result.getText().toString();
+        s = s.substring(0,s.length()-1);
+        result.setText(s);
+    }
+
     public void numZero(View view){
         String s = result.getText().toString();
         if(s.length() !=0){
