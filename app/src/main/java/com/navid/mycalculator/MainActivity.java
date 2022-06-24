@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         String s = result.getText().toString();
         s = s.substring(0,s.length()-1);
         result.setText(s);
+
     }
 
     public void numZero(View view){
