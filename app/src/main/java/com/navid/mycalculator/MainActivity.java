@@ -29,9 +29,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void delete(View view){
         String s = result.getText().toString();
-        s = s.substring(0,s.length()-1);
-        result.setText(s);
 
+        if(s.length() !=0){
+            s = s.substring(0,s.length()-1);
+            result.setText(s);
+        }
     }
 
     public void numZero(View view){
