@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -12,68 +13,114 @@
         android:orientation="vertical">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/operation"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="This is a Result Box."/>
+            android:text="This is a Result Box."
+            android:background="#000000"
+            android:textColor="#F2F2F2"/>
 
-        <TextView
-            android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/result"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="This is a Operation Box."/>
+            android:background="#413F42"
+            android:gravity="bottom"
+            android:text="This is a Operation Box."
+            android:textColor="#F2F2F2"
+            android:textSize="20sp" />
+
+        <!--        <Button-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="Delete"/>-->
+
 
         <GridLayout
+            android:id="@+id/gridLayout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:rowCount="4"
+            android:layout_height="wrap_content"
+            android:background="#810955"
             android:columnCount="4"
-            android:background="#810955">
+            android:rowCount="4">
 
             <Button
+                android:id="@+id/buttonSeven"
                 android:backgroundTint="#7F8487"
                 android:text="7"/>
+
             <Button
+                android:id="@+id/buttonEight"
                 android:backgroundTint="#7F8487"
-                android:text="8"/>
+                android:text="8" />
+
             <Button
+                android:id="@+id/buttonNine"
                 android:backgroundTint="#7F8487"
-                android:text="9"/>
+                android:text="9" />
+
             <Button
+                android:id="@+id/buttonDivide"
                 android:backgroundTint="#7F8487"
-                android:text="/"/>
+                android:text="/" />
+
             <Button
+                android:id="@+id/buttonFour"
                 android:backgroundTint="#7F8487"
-                android:text="4"/>
+                android:text="4" />
+
             <Button
+                android:id="@+id/buttonFive"
                 android:backgroundTint="#7F8487"
-                android:text="5"/>
+                android:text="5" />
+
             <Button
+                android:id="@+id/buttonSix"
                 android:backgroundTint="#7F8487"
-                android:text="6"/>
+                android:text="6" />
+
             <Button
+                android:id="@+id/buttonMultiply"
                 android:backgroundTint="#7F8487"
-                android:text="*"/>
+                android:text="*" />
+
             <Button
+                android:id="@+id/buttonOne"
                 android:backgroundTint="#7F8487"
-                android:text="1"/>
+                android:text="1" />
+
             <Button
+                android:id="@+id/buttonTwo"
                 android:backgroundTint="#7F8487"
-                android:text="2"/>
+                android:text="2" />
+
             <Button
+                android:id="@+id/buttonThree"
                 android:backgroundTint="#7F8487"
-                android:text="3"/>
+                android:text="3" />
+
             <Button
+                android:id="@+id/buttonMinus"
                 android:backgroundTint="#7F8487"
-                android:text="-"/>
+                android:text="-" />
+
             <Button
+                android:id="@+id/buttonDot"
                 android:backgroundTint="#7F8487"
-                android:text="."/>
+                android:text="." />
+
             <Button
+                android:id="@+id/buttonZero"
                 android:backgroundTint="#7F8487"
-                android:text="0"/>
+                android:text="0" />
+
             <Button
+                android:id="@+id/buttonEquals"
                 android:backgroundTint="#7F8487"
-                android:text="="/>
+                android:text="=" />
+
             <Button
+                android:id="@+id/buttonPlus"
                 android:backgroundTint="#7F8487"
                 android:text="+"/>
 
