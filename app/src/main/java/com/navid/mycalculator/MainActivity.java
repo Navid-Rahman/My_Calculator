@@ -25,7 +25,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void numZero(View view){
         String s = result.getText().toString();
-        result.setText(s+"0");
+        if(s.length() !=0){
+            result.setText(s+"0");
+        }
     }
     public void numOne(View view){
         String s = result.getText().toString();
@@ -63,4 +65,6 @@ public class MainActivity extends AppCompatActivity {
         String s = result.getText().toString();
         result.setText(s+"9");
     }
+
+
 }
