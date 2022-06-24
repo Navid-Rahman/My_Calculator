@@ -16,9 +16,8 @@
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="200dp"
             android:background="@color/black"
-            android:text="This is a Result Box."
             android:textColor="#F2F2F2"
             android:textSize="30dp"
             android:gravity="bottom|right"/>
@@ -62,61 +61,70 @@
             <Button
                 android:id="@+id/buttonSeven"
                 android:backgroundTint="#7F8487"
-                android:text="7"/>
+                android:text="7"
+                android:onClick="numSeven"/>
 
             <Button
                 android:id="@+id/buttonEight"
                 android:backgroundTint="#7F8487"
-                android:text="8" />
+                android:text="8"
+                android:onClick="numEight"/>
 
             <Button
                 android:id="@+id/buttonNine"
                 android:backgroundTint="#7F8487"
-                android:text="9" />
+                android:text="9"
+                android:onClick="numNine"/>
 
             <Button
                 android:id="@+id/buttonDivide"
-                android:backgroundTint="#7F8487"
+                android:backgroundTint="#F66B0E"
                 android:text="/" />
 
             <Button
                 android:id="@+id/buttonFour"
                 android:backgroundTint="#7F8487"
-                android:text="4" />
+                android:text="4"
+                android:onClick="numFour"/>
 
             <Button
                 android:id="@+id/buttonFive"
                 android:backgroundTint="#7F8487"
-                android:text="5" />
+                android:text="5"
+                android:onClick="numFive"/>
 
             <Button
                 android:id="@+id/buttonSix"
                 android:backgroundTint="#7F8487"
-                android:text="6" />
+                android:text="6"
+                android:onClick="numSix"/>
 
             <Button
                 android:id="@+id/buttonMultiply"
-                android:backgroundTint="#7F8487"
+                android:backgroundTint="#F66B0E"
                 android:text="*" />
 
             <Button
                 android:id="@+id/buttonOne"
                 android:backgroundTint="#7F8487"
-                android:text="1" />
+                android:text="1"
+                android:onClick="numOne"/>
 
             <Button
                 android:id="@+id/buttonTwo"
                 android:backgroundTint="#7F8487"
-                android:text="2" />
+                android:text="2"
+                android:onClick="numTwo"/>
 
             <Button
                 android:id="@+id/buttonThree"
                 android:backgroundTint="#7F8487"
-                android:text="3" />
+                android:text="3"
+                android:onClick="numThree"/>
 
             <Button
                 android:id="@+id/buttonMinus"
-                android:backgroundTint="#7F8487"
+                android:backgroundTint="#F66B0E"
                 android:text="-" />
 
             <Button
@@ -127,16 +135,17 @@
             <Button
                 android:id="@+id/buttonZero"
                 android:backgroundTint="#7F8487"
-                android:text="0" />
+                android:text="0"
+                android:onClick="numZero"/>
 
             <Button
                 android:id="@+id/buttonEquals"
-                android:backgroundTint="#7F8487"
+                android:backgroundTint="#F66B0E"
                 android:text="=" />
 
             <Button
                 android:id="@+id/buttonPlus"
-                android:backgroundTint="#7F8487"
+                android:backgroundTint="#F66B0E"
                 android:text="+"/>
 
         </GridLayout>
