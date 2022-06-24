@@ -13,34 +13,42 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/operation"
+            android:id="@+id/textView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="This is a Result Box."
+            android:layout_height="150dp"
             android:background="#000000"
-            android:textColor="#F2F2F2"/>
+            android:text="This is a Result Box."
+            android:textColor="#F2F2F2"
+            android:textSize="30dp"
+            android:gravity="bottom|right"/>
 
-        <EditText
-            android:id="@+id/result"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#413F42"
-            android:gravity="bottom"
-            android:text="This is a Operation Box."
-            android:textColor="#F2F2F2"
-            android:textSize="20sp" />
+            android:orientation="horizontal"
+            android:layout_weight="">
 
-        <!--        <Button-->
-        <!--            android:layout_width="wrap_content"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:text="Delete"/>-->
+            <Button
+                android:id="@+id/buttonClear"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Clear"
+                android:textSize="20dp"
+                android:layout_weight="2"/>
 
+            <Button
+                android:id="@+id/buttonDelete"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Delete"
+                android:textSize="20dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
 
         <GridLayout
-            android:id="@+id/gridLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#810955"
             android:columnCount="4"
             android:rowCount="4">
 
@@ -125,6 +133,7 @@
                 android:text="+"/>
 
         </GridLayout>
+
     </LinearLayout>
 
 </RelativeLayout>
