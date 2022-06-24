@@ -111,31 +111,34 @@ public class MainActivity extends AppCompatActivity {
     }
     public void Equals(View view){
 
-        String s = result.getText().toString();
-        operand2 = Double.parseDouble(s);
-        if (c=='+'){
-            answer = operand1 + operand2;
-            s = String.valueOf(answer);
-            result.setText(s);
-            c = '0';
-        }
-        if (c=='-'){
-            answer = operand1 - operand2;
-            s = String.valueOf(answer);
-            result.setText(s);
-            c = '0';
-        }
-        if (c=='*'){
-            answer = operand1 * operand2;
-            s = String.valueOf(answer);
-            result.setText(s);
-            c = '0';
-        }
-        if (c=='/'){
-            answer = operand1 / operand2;
-            s = String.valueOf(answer);
-            result.setText(s);
-            c = '0';
+        if(c != '0') {
+
+            String s = result.getText().toString();
+            operand2 = Double.parseDouble(s);
+            if (c == '+') {
+                answer = operand1 + operand2;
+                s = String.valueOf(answer);
+                result.setText(s);
+                c = '0';
+            }
+            if (c == '-') {
+                answer = operand1 - operand2;
+                s = String.valueOf(answer);
+                result.setText(s);
+                c = '0';
+            }
+            if (c == '*') {
+                answer = operand1 * operand2;
+                s = String.valueOf(answer);
+                result.setText(s);
+                c = '0';
+            }
+            if (c == '/') {
+                answer = operand1 / operand2;
+                s = String.valueOf(answer);
+                result.setText(s);
+                c = '0';
+            }
         }
     }
 
