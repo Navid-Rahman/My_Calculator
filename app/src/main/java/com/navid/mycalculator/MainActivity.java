@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-//    Clear and Delete Button
+//    Clear, Delete and Negation Button
     public void Clear(View view){
         result.setText("");
     }
@@ -36,6 +36,11 @@ public class MainActivity extends AppCompatActivity {
             s = s.substring(0,s.length()-1);
             result.setText(s);
         }
+    }
+
+    public void Negation(View view){
+        String s = result.getText().toString();
+        result.setText("-"+s);
     }
 
 
