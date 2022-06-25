@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-//    Calcutor Method Funtions
+//    Calcutor Method Funtions (Plus, Minus, Multiply, Divide, Equals)
     public void Plus(View view){
 
         String s = result.getText().toString();
